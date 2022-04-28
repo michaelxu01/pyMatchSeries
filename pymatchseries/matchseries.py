@@ -212,6 +212,7 @@ class MatchSeries:
         self.__run_match_series()
         self.__metadata["completed"] = True
         self.__update_metadata_file()
+        return True
 
     def save_data(self, path):
         """Writes the data in the right format to disk"""
